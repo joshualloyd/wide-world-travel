@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wide World Travel</title>
+</head>
+<body ng-app="app">
+	<div ng-controller="bookCtrl">
+		<h2>My list of Guides</h2>
+		<ul>
+			<li ng-repeat="book in books">{{book.title}}</li>
+		</ul>
+	</div>
+
+	<script src="lib/angular.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controllers/bookCtrl.js"></script>
+</body>
+</html>
